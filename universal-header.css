@@ -1,0 +1,218 @@
+
+/* =========================================================
+   JEHOSAF UNIVERSAL HEADER
+   Same header on every page
+   ========================================================= */
+
+.universal-header{
+  width:100%;
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:36px;
+  padding:14px 20px 14px 26px;
+  margin-bottom:18px;
+
+  background:#ffffff;
+  border:1px solid #d9dde1;
+  border-radius:20px;
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.universal-brand{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-decoration:none;
+  line-height:1;
+  min-width:max-content;
+  color:#17191b;
+}
+
+.universal-brand-main{
+  font-family:"Space Grotesk",sans-serif;
+  font-size:2.05rem;
+  font-weight:800;
+  letter-spacing:.16em;
+}
+
+.universal-brand-sub{
+  margin-top:7px;
+  color:#747b80;
+  font-size:.58rem;
+  letter-spacing:.16em;
+  font-weight:600;
+}
+
+.universal-header-right{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:24px;
+  flex:1;
+}
+
+.universal-nav{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.universal-nav a{
+  text-decoration:none;
+  padding:10px 13px;
+  border-radius:11px;
+  color:#3f464a;
+  font-size:.94rem;
+  font-weight:600;
+  border:1px solid transparent;
+
+  transition:
+    transform .18s ease,
+    background-color .18s ease,
+    box-shadow .18s ease,
+    border-color .18s ease;
+}
+
+.universal-nav a:hover{
+  transform:scale(1.04);
+  background:#f7f8f9;
+  box-shadow:0 5px 14px rgba(0,0,0,.06);
+}
+
+.universal-nav a.active{
+  color:#173f2a;
+  background:#f5f7f6;
+  border-color:#cfd7d2;
+}
+
+.universal-search-wrap{
+  position:relative;
+  width:330px;
+  flex:0 0 330px;
+}
+
+.universal-search-box{
+  width:100%;
+  height:44px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:0 14px;
+  background:#fff;
+  border:1px solid #d9dde1;
+  border-radius:13px;
+}
+
+.universal-search-icon{
+  color:#65706a;
+  font-size:.9rem;
+}
+
+.universal-search-box input{
+  width:100%;
+  min-width:0;
+  border:0;
+  outline:0;
+  background:transparent;
+  color:#24282a;
+  font:inherit;
+  font-size:.76rem;
+}
+
+.universal-search-box input::placeholder{
+  color:#91979b;
+}
+
+.universal-search-results{
+  position:absolute;
+  top:52px;
+  right:0;
+  width:100%;
+  z-index:10000;
+  background:#fff;
+  border:1px solid #d9dde1;
+  border-radius:14px;
+  box-shadow:0 16px 34px rgba(0,0,0,.12);
+  padding:7px;
+}
+
+.universal-search-result{
+  display:block;
+  text-decoration:none;
+  padding:10px 11px;
+  border-radius:9px;
+  color:#17191b;
+}
+
+.universal-search-result:hover{
+  background:#f5f7f6;
+}
+
+.universal-search-result strong{
+  display:block;
+  font-size:.78rem;
+}
+
+.universal-search-result span{
+  display:block;
+  margin-top:3px;
+  color:#777e82;
+  font-size:.64rem;
+}
+
+.universal-search-empty{
+  padding:12px;
+  color:#777e82;
+  font-size:.72rem;
+}
+
+@media(max-width:1200px){
+  .universal-header{
+    align-items:flex-start;
+  }
+
+  .universal-header-right{
+    flex-direction:column;
+    align-items:flex-end;
+    gap:10px;
+  }
+}
+
+@media(max-width:850px){
+  .universal-header{
+    flex-direction:column;
+  }
+
+  .universal-header-right{
+    width:100%;
+    align-items:flex-start;
+  }
+
+  .universal-nav{
+    flex-wrap:wrap;
+  }
+
+  .universal-search-wrap{
+    width:100%;
+    flex-basis:auto;
+  }
+}
+
+@media(max-width:560px){
+  .universal-brand-main{
+    font-size:1.7rem;
+  }
+
+  .universal-nav a{
+    font-size:.88rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .universal-nav a{
+    transition:none !important;
+    transform:none !important;
+  }
+}
