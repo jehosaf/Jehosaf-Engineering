@@ -657,3 +657,30 @@ footer{
     gap:14px;
   }
 }
+
+
+/* =========================================================
+   BOTTOM HOMEPAGE CARD HOVER POP
+   Matches the subtle bubble effect used elsewhere
+   ========================================================= */
+
+.feature-card{
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    border-color .18s ease;
+  transform-origin:center;
+}
+
+.feature-card:hover{
+  transform:scale(1.018);
+  box-shadow:0 14px 30px rgba(0,0,0,.10);
+  border-color:#cfd5d9;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .feature-card{
+    transition:none !important;
+    transform:none !important;
+  }
+}
