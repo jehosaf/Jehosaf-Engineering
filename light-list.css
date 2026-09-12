@@ -1,12 +1,12 @@
 
 :root{
-  --bg:#f4f7f5;
+  --bg:#eef1f0;
   --surface:#ffffff;
-  --surface-soft:#f8faf9;
+  --surface-soft:#f6f7f7;
   --text:#17201c;
   --muted:#65726b;
-  --line:#dce5df;
-  --line-soft:#e9efeb;
+  --line:#d9dddb;
+  --line-soft:#e7e9e8;
   --green:#1f5a3a;
   --green2:#2f7d52;
   --shadow:0 10px 28px rgba(29,46,36,.08);
@@ -20,7 +20,7 @@ body{
   min-height:100vh;
   font-family:Inter,system-ui,sans-serif;
   color:var(--text);
-  background:#f4f7f5;
+  background:#eef1f0;
 }
 
 a{color:inherit}
@@ -68,17 +68,17 @@ a{color:inherit}
 
 .navlinks a.active{
   color:#173f2a;
-  background:#edf5f0;
-  border:1px solid #cfe0d5;
+  background:#f0f3f1;
+  border:1px solid #ccd5d0;
 }
 
 .eyebrow{
   display:inline-flex;
   padding:6px 10px;
   border-radius:999px;
-  border:1px solid #d3e2d8;
+  border:1px solid #d4dad7;
   color:#2b5a40;
-  background:#f3f8f5;
+  background:#f6f7f7;
   font-size:.62rem;
   letter-spacing:.14em;
   font-weight:800;
@@ -142,7 +142,7 @@ a{color:inherit}
 }
 
 .clean-item summary:hover{
-  background:#fbfdfc;
+  background:#fafafa;
 }
 
 .clean-number{
@@ -180,8 +180,8 @@ a{color:inherit}
   place-items:center;
   color:var(--green);
   border-radius:10px;
-  border:1px solid #d8e4dc;
-  background:#f8fbf9;
+  border:1px solid #d7dcda;
+  background:#f7f8f8;
 }
 
 .clean-item[open] .clean-chevron{
@@ -247,8 +247,8 @@ a{color:inherit}
   font-size:.69rem;
   padding:5px 8px;
   border-radius:999px;
-  background:#f2f8f4;
-  border:1px solid #d5e5da;
+  background:#f6f8f7;
+  border:1px solid #d8dfdb;
 }
 
 .clean-visual img{
