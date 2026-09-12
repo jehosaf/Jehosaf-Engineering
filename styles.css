@@ -590,11 +590,18 @@ footer{
     padding:26px;
   }
 }
+
+
 /* =========================================================
-   HOMEPAGE IMAGE RESTORE
+   HOMEPAGE FULL-SCREEN RESTORE
+   Keep homepage cinematic and viewport-filling
    ========================================================= */
 
-/* Entire website background */
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
 body {
   background:
     linear-gradient(
@@ -609,14 +616,60 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Restore dashboard to nearly full viewport width */
+.site-shell {
+  width: calc(100vw - 28px);
+  max-width: none;
+  margin: 14px auto;
+  min-height: calc(100vh - 28px);
+  gap: 18px;
+}
 
-/* HERO IMAGE */
+/* Sidebar fills the visible screen height */
+.sidebar {
+  min-height: calc(100vh - 28px);
+  top: 14px;
+}
+
+/* Main dashboard uses the full available viewport */
+.dashboard {
+  min-height: calc(100vh - 28px);
+  justify-content: space-between;
+}
+
+/* Keep the main content compact enough to fit one desktop screen */
+.topbar {
+  flex: 0 0 auto;
+}
+
+.top-grid {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.hero {
+  min-height: 0;
+  height: 100%;
+}
+
+.bottom-grid {
+  flex: 0 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+/* =========================================================
+   HOMEPAGE IMAGES
+   ========================================================= */
+
 .hero-art {
   background:
     linear-gradient(
       90deg,
       rgba(8, 13, 18, 0.10),
-      rgba(8, 13, 18, 0.30)
+      rgba(8, 13, 18, 0.28)
     ),
     url("/Jehosaf-Engineering/assets/industrial-launcher.png");
 
@@ -626,14 +679,11 @@ body {
   overflow: hidden;
 }
 
-/* Hide old CSS-built launcher */
 .launcher,
 .blueprint {
   display: none;
 }
 
-
-/* PROJECTS CARD */
 .visual-project {
   background:
     linear-gradient(
@@ -651,8 +701,6 @@ body {
   display: none;
 }
 
-
-/* EXPERIENCE CARD */
 .visual-work {
   background:
     linear-gradient(
@@ -670,8 +718,6 @@ body {
   display: none;
 }
 
-
-/* CREDENTIALS CARD */
 .visual-creds {
   background:
     linear-gradient(
@@ -688,8 +734,6 @@ body {
   display: none;
 }
 
-
-/* CONTACT CARD */
 .visual-contact {
   background:
     linear-gradient(
@@ -705,4 +749,161 @@ body {
 .visual-contact .sun,
 .visual-contact .mountain {
   display: none;
+}
+
+/* =========================================================
+   DESKTOP ONE-SCREEN FIT
+   Keep everything visible at 100% browser zoom
+   ========================================================= */
+
+@media (min-width: 1100px) and (max-height: 950px) {
+
+  .site-shell {
+    width: calc(100vw - 20px);
+    margin: 10px auto;
+    min-height: calc(100vh - 20px);
+    gap: 14px;
+  }
+
+  .sidebar {
+    min-height: calc(100vh - 20px);
+    top: 10px;
+    padding: 16px 14px;
+  }
+
+  .dashboard {
+    min-height: calc(100vh - 20px);
+    gap: 10px;
+  }
+
+  .topbar {
+    height: 38px;
+  }
+
+  .hero {
+    padding: 18px 20px;
+    min-height: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 3.6vw, 4.15rem);
+    margin: 12px 0;
+  }
+
+  .hero-copy > p {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .hero-actions {
+    margin-top: 16px;
+  }
+
+  .btn {
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 0.78rem;
+  }
+
+  .stats {
+    padding-top: 14px;
+  }
+
+  .stats strong {
+    font-size: 1.35rem;
+  }
+
+  .stats span {
+    font-size: 0.64rem;
+  }
+
+  .right-column {
+    gap: 10px;
+  }
+
+  .profile,
+  .quick {
+    padding: 13px;
+  }
+
+  .quick-grid {
+    gap: 7px;
+  }
+
+  .quick-grid a {
+    min-height: 94px;
+    padding: 9px;
+  }
+
+  .quick-grid i {
+    width: 29px;
+    height: 29px;
+  }
+
+  .quick-grid strong {
+    font-size: 0.72rem;
+    margin-top: 5px;
+  }
+
+  .quick-grid small {
+    font-size: 0.58rem;
+  }
+
+  .bottom-grid {
+    gap: 10px;
+  }
+
+  .feature-card {
+    min-height: 195px;
+  }
+
+  .image {
+    height: 88px;
+  }
+
+  .feature-content {
+    padding: 10px 12px;
+  }
+
+  .feature-icon {
+    width: 31px;
+    height: 31px;
+    margin-top: -25px;
+  }
+
+  .feature-card h2 {
+    font-size: 0.92rem;
+    margin: 6px 0 3px;
+  }
+
+  .feature-card p {
+    font-size: 0.60rem;
+    line-height: 1.35;
+    min-height: 30px;
+  }
+
+  .feature-bottom {
+    margin-top: 6px;
+  }
+
+  .feature-bottom b {
+    width: 28px;
+    height: 28px;
+  }
+
+  footer {
+    height: 20px;
+    font-size: 0.48rem;
+  }
+}
+
+/* Let mobile/tablet scroll naturally */
+@media (max-width: 1099px) {
+  .site-shell {
+    min-height: auto;
+  }
+
+  .dashboard {
+    min-height: auto;
+  }
 }
