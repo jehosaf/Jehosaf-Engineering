@@ -10,46 +10,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/Jehosaf-Engineering/universal-header.css">
 </head>
 
 <body>
 
 <div class="page-shell">
 
-  <header class="site-header">
+  
+<header class="universal-header">
+  <a class="universal-brand" href="/Jehosaf-Engineering/index.html">
+    <span class="universal-brand-main">JEHOSAF</span>
+    <span class="universal-brand-sub">MECHANICAL ENGINEERING</span>
+  </a>
 
-    <a class="brand" href="index.html">
-      <span class="brand-main">JEHOSAF</span>
-      <span class="brand-sub">MECHANICAL ENGINEERING</span>
-    </a>
+  <div class="universal-header-right">
+    <nav class="universal-nav">
+      <a class="active" href="/Jehosaf-Engineering/index.html">Home</a>
+      <a href="/Jehosaf-Engineering/projects/index.html">Projects</a>
+      <a href="/Jehosaf-Engineering/experience/index.html">Experience</a>
+      <a href="/Jehosaf-Engineering/credentials.html">Credentials</a>
+      <a href="/Jehosaf-Engineering/contact.html">Contact</a>
+    </nav>
 
-    <div class="header-right">
-
-      <nav class="top-nav">
-        <a class="active" href="index.html">Home</a>
-        <a href="projects/index.html">Projects</a>
-        <a href="experience/index.html">Experience</a>
-        <a href="credentials.html">Credentials</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-
-      <div class="search-wrap">
-        <div class="search-box">
-          <span class="search-icon">⌕</span>
-          <input
-            id="site-search"
-            type="search"
-            placeholder="Search projects, skills, or experience..."
-            autocomplete="off"
-            aria-label="Search portfolio">
-        </div>
-
-        <div id="search-results" class="search-results" hidden></div>
+    <div class="universal-search-wrap">
+      <div class="universal-search-box">
+        <span class="universal-search-icon">⌕</span>
+        <input
+          class="universal-site-search"
+          type="search"
+          placeholder="Search projects, skills, or experience..."
+          autocomplete="off"
+          aria-label="Search portfolio">
       </div>
-
+      <div class="universal-search-results" hidden></div>
     </div>
+  </div>
+</header>
 
-  </header>
 
 
   <div class="process-line">
@@ -241,7 +239,6 @@
   </footer>
 
 </div>
-
-<script src="script.js"></script>
+  <script src="/Jehosaf-Engineering/universal-search.js"></script>
 </body>
 </html>
