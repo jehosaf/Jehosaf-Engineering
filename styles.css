@@ -684,3 +684,51 @@ footer{
     transform:none !important;
   }
 }
+
+
+/* =========================================================
+   COMPACT BOTTOM HOMEPAGE CARDS
+   ========================================================= */
+
+.bottom-grid{
+  gap:12px;
+}
+
+.feature-card{
+  min-height:0;
+}
+
+.feature-image{
+  height:96px;
+}
+
+.feature-content{
+  padding:10px 12px 11px;
+}
+
+.feature-content h2{
+  margin:0 0 3px;
+  font-size:.92rem;
+}
+
+.feature-content p{
+  margin:0;
+  min-height:0;
+  font-size:.62rem;
+  line-height:1.32;
+}
+
+.feature-content span{
+  margin-top:6px;
+  font-size:.66rem;
+}
+
+/* Shorter overall card footprint */
+.feature-card{
+  height:auto;
+}
+
+/* Keep the hover effect */
+.feature-card:hover{
+  transform:scale(1.018);
+}
