@@ -626,3 +626,103 @@ footer{
     font-size: 0.52rem;
   }
 }
+/* =========================================================
+   REAL IMAGE BACKGROUNDS
+   ========================================================= */
+
+/* HERO / T-SHIRT LAUNCHER */
+.hero-art {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 15, 20, 0.15),
+      rgba(10, 15, 20, 0.25)
+    ),
+    url("assets/industrial-launcher.png");
+
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* Hide the old CSS launcher drawing */
+.launcher,
+.blueprint {
+  display: none;
+}
+
+/* PROJECTS CARD */
+.visual-project {
+  background:
+    linear-gradient(
+      rgba(9, 14, 19, 0.18),
+      rgba(9, 14, 19, 0.48)
+    ),
+    url("assets/precision-gears.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* Hide old fake gear shapes */
+.visual-project .gear,
+.visual-project .shaft {
+  display: none;
+}
+
+/* EXPERIENCE CARD */
+.visual-work {
+  background:
+    linear-gradient(
+      rgba(8, 13, 18, 0.16),
+      rgba(8, 13, 18, 0.44)
+    ),
+    url("assets/welding-workshop.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* Hide old welding placeholder graphics */
+.visual-work .work-glow,
+.visual-work .work-line {
+  display: none;
+}
+
+/* CREDENTIALS CARD */
+.visual-creds {
+  background:
+    linear-gradient(
+      rgba(10, 15, 20, 0.16),
+      rgba(10, 15, 20, 0.48)
+    ),
+    url("assets/engineering-workspace.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* Hide old fake certificate cards */
+.visual-creds .cert {
+  display: none;
+}
+
+/* CONTACT CARD */
+.visual-contact {
+  background:
+    linear-gradient(
+      rgba(9, 14, 20, 0.08),
+      rgba(9, 14, 20, 0.30)
+    ),
+    url("assets/mountain-sunset.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* Hide old fake mountain drawing */
+.visual-contact .sun,
+.visual-contact .mountain {
+  display: none;
+}
