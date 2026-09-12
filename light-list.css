@@ -440,3 +440,68 @@ body.lightbox-open{
     right:10px;
   }
 }
+
+
+/* =========================================================
+   TRUE NEUTRAL GRAY OVERRIDE
+   Removes all green cast from page surfaces
+   ========================================================= */
+
+html,
+body {
+  background: #eef0f2 !important;
+  background-image: none !important;
+}
+
+.page {
+  background: transparent !important;
+}
+
+/* Pure white primary surfaces */
+.topnav,
+.clean-item,
+.footer,
+.main-photo,
+.gallery-photo,
+.gallery-placeholder {
+  background: #ffffff !important;
+  background-image: none !important;
+}
+
+/* Neutral hover / utility surfaces */
+.clean-item summary:hover {
+  background: #f8f9fa !important;
+}
+
+.clean-chevron,
+.case-back {
+  background: #f7f8f9 !important;
+}
+
+/* Keep green only as an accent, not a tint */
+.eyebrow {
+  background: #ffffff !important;
+}
+
+.tags span,
+.tools span {
+  background: #ffffff !important;
+}
+
+/* Neutral borders */
+.topnav,
+.clean-item,
+.footer,
+.main-photo,
+.gallery-photo,
+.gallery-placeholder,
+.clean-chevron {
+  border-color: #d8dde1 !important;
+}
+
+.clean-section,
+.story-section,
+.clean-expanded,
+.work-item {
+  border-color: #e5e8eb !important;
+}
