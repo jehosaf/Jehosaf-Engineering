@@ -833,3 +833,141 @@ footer{
     font-size:.88rem;
   }
 }
+
+
+/* =========================================================
+   MOBILE HOMEPAGE REBALANCE
+   Phones get a content-first hero with no large hero image
+   ========================================================= */
+
+@media (max-width: 700px){
+
+  /* Slightly tighter overall page margin */
+  .page-shell{
+    width:calc(100vw - 20px);
+    margin:10px auto;
+  }
+
+  /* Hero becomes text-only on phones */
+  .hero-card{
+    display:block;
+    min-height:0;
+    padding:22px 20px;
+  }
+
+  .hero-art{
+    display:none;
+  }
+
+  .hero-copy{
+    width:100%;
+  }
+
+  .hero-copy h1{
+    max-width:100%;
+    margin:14px 0 12px;
+    font-size:clamp(2.45rem,12vw,3.45rem);
+    line-height:.94;
+    letter-spacing:-.05em;
+  }
+
+  .hero-copy > p{
+    max-width:100%;
+    font-size:.82rem;
+    line-height:1.55;
+  }
+
+  .hero-actions{
+    max-width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-top:18px;
+  }
+
+  .btn{
+    width:100%;
+    padding:0 10px;
+    font-size:.72rem;
+  }
+
+  /* Stats fit cleanly without getting tiny */
+  .stats{
+    max-width:100%;
+    grid-template-columns:1fr 1fr;
+    gap:0;
+    margin-top:28px;
+    padding-top:0;
+    border-top:1px solid var(--line);
+  }
+
+  .stats div{
+    padding:14px 10px;
+    border-left:0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .stats div:nth-child(odd){
+    border-right:1px solid var(--line);
+    padding-left:0;
+  }
+
+  .stats div:nth-child(even){
+    padding-right:0;
+  }
+
+  .stats div:nth-child(3),
+  .stats div:nth-child(4){
+    border-bottom:0;
+  }
+
+  .stats strong{
+    font-size:1.25rem;
+  }
+
+  /* Right-side desktop cards stack below hero */
+  .right-column{
+    grid-template-columns:1fr;
+    grid-template-rows:auto;
+  }
+
+  /* Bottom cards stay single column and compact */
+  .bottom-grid{
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+
+  .feature-image{
+    height:115px;
+  }
+
+  /* Process line can scroll rather than squeeze */
+  .process-line{
+    overflow-x:auto;
+    white-space:nowrap;
+    scrollbar-width:none;
+    padding-bottom:10px;
+  }
+
+  .process-line::-webkit-scrollbar{
+    display:none;
+  }
+}
+
+
+/* Extra-small phones */
+@media (max-width: 430px){
+
+  .hero-copy h1{
+    font-size:clamp(2.15rem,11.5vw,2.9rem);
+  }
+
+  .hero-actions{
+    grid-template-columns:1fr;
+  }
+
+  .eyebrow{
+    font-size:.55rem;
+    letter-spacing:.11em;
+  }
+}
