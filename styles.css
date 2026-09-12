@@ -590,3 +590,119 @@ footer{
     padding:26px;
   }
 }
+/* =========================================================
+   HOMEPAGE IMAGE RESTORE
+   ========================================================= */
+
+/* Entire website background */
+body {
+  background:
+    linear-gradient(
+      rgba(5, 10, 15, 0.84),
+      rgba(5, 10, 15, 0.90)
+    ),
+    url("/Jehosaf-Engineering/assets/mountain-sunset.png");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+
+/* HERO IMAGE */
+.hero-art {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 13, 18, 0.10),
+      rgba(8, 13, 18, 0.30)
+    ),
+    url("/Jehosaf-Engineering/assets/industrial-launcher.png");
+
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* Hide old CSS-built launcher */
+.launcher,
+.blueprint {
+  display: none;
+}
+
+
+/* PROJECTS CARD */
+.visual-project {
+  background:
+    linear-gradient(
+      rgba(8, 13, 18, 0.10),
+      rgba(8, 13, 18, 0.44)
+    ),
+    url("/Jehosaf-Engineering/assets/precision-gears.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.visual-project .gear,
+.visual-project .shaft {
+  display: none;
+}
+
+
+/* EXPERIENCE CARD */
+.visual-work {
+  background:
+    linear-gradient(
+      rgba(8, 13, 18, 0.10),
+      rgba(8, 13, 18, 0.44)
+    ),
+    url("/Jehosaf-Engineering/assets/welding-workshop.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.visual-work .work-glow,
+.visual-work .work-line {
+  display: none;
+}
+
+
+/* CREDENTIALS CARD */
+.visual-creds {
+  background:
+    linear-gradient(
+      rgba(8, 13, 18, 0.12),
+      rgba(8, 13, 18, 0.46)
+    ),
+    url("/Jehosaf-Engineering/assets/engineering-workspace.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.visual-creds .cert {
+  display: none;
+}
+
+
+/* CONTACT CARD */
+.visual-contact {
+  background:
+    linear-gradient(
+      rgba(8, 13, 18, 0.05),
+      rgba(8, 13, 18, 0.26)
+    ),
+    url("/Jehosaf-Engineering/assets/mountain-sunset.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.visual-contact .sun,
+.visual-contact .mountain {
+  display: none;
+}
