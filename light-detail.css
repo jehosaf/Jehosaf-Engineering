@@ -529,3 +529,110 @@ body {
 .work-item {
   border-color: #e5e8eb !important;
 }
+
+
+/* =========================================================
+   PURE NEUTRAL COLOR SYSTEM
+   Green remains ONLY as an intentional accent
+   ========================================================= */
+
+:root{
+  --bg:#f1f2f3 !important;
+  --surface:#ffffff !important;
+  --text:#17191b !important;
+  --muted:#6d7277 !important;
+  --line:#d9dde1 !important;
+  --line-soft:#e7e9eb !important;
+  --shadow:0 10px 28px rgba(0,0,0,.07) !important;
+}
+
+/* True neutral page background */
+html,
+body{
+  background:#f1f2f3 !important;
+  background-color:#f1f2f3 !important;
+  background-image:none !important;
+  color:#17191b !important;
+}
+
+/* White surfaces */
+.topnav,
+.clean-item,
+.footer,
+.main-photo,
+.gallery-photo,
+.gallery-placeholder,
+.credential-card,
+.contact-card,
+.contact-note{
+  background:#ffffff !important;
+  background-image:none !important;
+  box-shadow:0 10px 28px rgba(0,0,0,.07) !important;
+}
+
+/* Neutral non-accent text */
+.clean-title p,
+.clean-section p,
+.clean-section li,
+.story-section p,
+.story-section li,
+.work-copy p,
+.case-hero > p,
+.page-intro p,
+.credential-card p,
+.contact-card p,
+.contact-note,
+.visual-caption,
+.case-meta,
+.clean-meta,
+.credential-meta{
+  color:#6d7277 !important;
+}
+
+/* Neutral separators */
+.clean-item,
+.topnav,
+.footer,
+.main-photo,
+.gallery-photo,
+.gallery-placeholder,
+.credential-card,
+.contact-card,
+.contact-note,
+.clean-chevron{
+  border-color:#d9dde1 !important;
+}
+
+.clean-section,
+.story-section,
+.clean-expanded,
+.work-item{
+  border-color:#e7e9eb !important;
+}
+
+/* Neutral utility backgrounds */
+.clean-item summary:hover,
+.clean-chevron,
+.case-back,
+.credential-badge,
+.contact-icon{
+  background:#f7f8f9 !important;
+}
+
+/* Keep tags mostly white/gray.
+   Green is only in text/border accents. */
+.tags span,
+.tools span{
+  background:#ffffff !important;
+  border-color:#d9dde1 !important;
+}
+
+/* Accent surfaces can keep a very subtle green selection */
+.navlinks a.active{
+  background:#f5f7f6 !important;
+}
+
+/* Remove green tint from eyebrow background */
+.eyebrow{
+  background:#ffffff !important;
+}
