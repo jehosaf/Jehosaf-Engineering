@@ -1,0 +1,330 @@
+
+/* PROJECT LANDING — ACCORDION / LIST PRIORITY */
+
+.projects-intro{
+  border-radius:22px;
+  padding:24px 30px;
+  margin-bottom:32px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:36px;
+}
+
+.intro-copy{
+  max-width:760px;
+}
+
+.intro-copy h1{
+  margin:10px 0 8px;
+  font-family:"Space Grotesk",sans-serif;
+  font-size:clamp(2rem,3vw,3.15rem);
+  line-height:1;
+  letter-spacing:-.045em;
+}
+
+.intro-copy h1 span{
+  color:var(--blue2);
+}
+
+.intro-copy p{
+  margin:0;
+  max-width:690px;
+  color:#b9c6d1;
+  font-size:.9rem;
+  line-height:1.65;
+}
+
+.capability-chips{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  gap:9px;
+  max-width:420px;
+}
+
+.capability-chips span{
+  padding:8px 11px;
+  border-radius:999px;
+  border:1px solid rgba(75,145,255,.18);
+  background:rgba(75,145,255,.055);
+  color:#bcd4f7;
+  font-size:.72rem;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+.project-list{
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+  margin-bottom:38px;
+}
+
+.project-item{
+  border-radius:22px;
+  overflow:hidden;
+}
+
+.project-item summary{
+  list-style:none;
+  cursor:pointer;
+  padding:26px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:32px;
+  transition:background .18s ease;
+}
+
+.project-item summary::-webkit-details-marker{
+  display:none;
+}
+
+.project-item summary:hover{
+  background:rgba(75,145,255,.045);
+}
+
+.summary-main{
+  display:flex;
+  gap:22px;
+  align-items:center;
+  min-width:0;
+  flex:1;
+}
+
+.summary-number{
+  width:58px;
+  height:58px;
+  min-width:58px;
+  display:grid;
+  place-items:center;
+  border-radius:16px;
+  background:rgba(75,145,255,.08);
+  border:1px solid rgba(75,145,255,.23);
+  color:var(--blue2);
+  font-weight:800;
+}
+
+.summary-copy{
+  min-width:0;
+}
+
+.summary-topline{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.summary-copy h2{
+  margin:0;
+  font-family:"Space Grotesk",sans-serif;
+  font-size:1.48rem;
+}
+
+.summary-copy p{
+  margin:8px 0 0;
+  color:#b9c6d1;
+  font-size:.9rem;
+  line-height:1.6;
+  max-width:780px;
+}
+
+.relevance{
+  padding:6px 9px;
+  border-radius:999px;
+  font-size:.59rem;
+  font-weight:800;
+  letter-spacing:.10em;
+  border:1px solid rgba(75,145,255,.24);
+}
+
+.relevance.high{
+  background:rgba(75,145,255,.10);
+  color:#9fc4ff;
+}
+
+.relevance.medium{
+  background:rgba(255,255,255,.045);
+  color:#c4d0db;
+  border-color:rgba(255,255,255,.10);
+}
+
+.summary-meta{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  color:#8fa0af;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.10em;
+  white-space:nowrap;
+}
+
+.chevron{
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  border-radius:11px;
+  border:1px solid var(--line);
+  color:var(--blue2);
+  font-size:1.15rem;
+  transition:transform .18s ease;
+}
+
+.project-item[open] .chevron{
+  transform:rotate(180deg);
+}
+
+.project-expanded{
+  border-top:1px solid var(--line);
+  padding:32px;
+}
+
+.relevance-panel{
+  padding:24px;
+  border-radius:18px;
+  background:rgba(75,145,255,.045);
+  border:1px solid rgba(75,145,255,.14);
+}
+
+.mini-label{
+  color:#87a5c5;
+  font-size:.65rem;
+  letter-spacing:.15em;
+  font-weight:800;
+  margin-bottom:9px;
+}
+
+.relevance-panel h3{
+  font-family:"Space Grotesk",sans-serif;
+  margin:0 0 8px;
+  font-size:1.22rem;
+}
+
+.relevance-panel p{
+  margin:0;
+  color:#bcc8d2;
+  line-height:1.72;
+  font-size:.9rem;
+  max-width:900px;
+}
+
+.expanded-grid{
+  display:grid;
+  grid-template-columns:1fr .9fr 1.1fr;
+  gap:28px;
+  margin-top:28px;
+  align-items:start;
+}
+
+.selected-work{
+  margin:0;
+  padding-left:18px;
+  color:#c5d0d9;
+}
+
+.selected-work li{
+  margin:8px 0;
+  line-height:1.62;
+  font-size:.88rem;
+}
+
+.project-image{
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  min-height:230px;
+  background:rgba(255,255,255,.02);
+}
+
+.project-image img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+  display:block;
+}
+
+.project-button{
+  display:inline-flex;
+  margin-top:26px;
+  padding:12px 16px;
+  border-radius:13px;
+  text-decoration:none;
+  font-weight:700;
+  border:1px solid rgba(75,145,255,.30);
+  background:rgba(75,145,255,.08);
+  color:#dceaff;
+  box-shadow:var(--glow);
+}
+
+@media(max-width:980px){
+
+  .expanded-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .project-image{
+    grid-column:1/-1;
+  }
+
+  .project-image img{
+    height:260px;
+  }
+}
+
+@media(max-width:900px){
+
+  .projects-intro{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .capability-chips{
+    justify-content:flex-start;
+    max-width:none;
+  }
+}
+
+@media(max-width:760px){
+
+  .projects-intro{
+    padding:22px;
+    margin-bottom:22px;
+  }
+
+  .project-list{
+    gap:18px;
+  }
+
+  .project-item summary{
+    align-items:flex-start;
+    flex-direction:column;
+    padding:22px;
+  }
+
+  .summary-meta{
+    width:100%;
+    justify-content:space-between;
+  }
+
+  .expanded-grid{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .project-image{
+    grid-column:auto;
+  }
+
+  .summary-main{
+    align-items:flex-start;
+  }
+
+  .project-expanded{
+    padding:24px;
+  }
+}
