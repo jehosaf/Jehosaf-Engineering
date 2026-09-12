@@ -322,18 +322,199 @@ a{color:inherit}
   .hero{padding:22px}
   .footer{flex-direction:column;align-items:flex-start;padding:16px}
 }
-body {
-  background:
-    linear-gradient(
-      rgba(5, 10, 15, 0.84),
-      rgba(5, 10, 15, 0.90)
-    ),
-    url("/Jehosaf-Engineering/assets/mountain-sunset.png");
 
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 
-  min-height: 100vh;
+/* =========================================================
+   WHITESPACE / BREATHING ROOM UPDATE
+   ========================================================= */
+
+.page{
+  width:min(1480px,calc(100vw - 64px));
+  margin:32px auto;
+}
+
+.topnav{
+  min-height:78px;
+  padding:0 28px;
+  margin-bottom:28px;
+}
+
+.navlinks{
+  gap:14px;
+}
+
+.navlinks a{
+  padding:11px 16px;
+}
+
+.hero{
+  padding:40px;
+  margin-bottom:30px;
+  gap:34px;
+}
+
+.hero h1{
+  margin-top:20px;
+  margin-bottom:18px;
+}
+
+.hero p{
+  line-height:1.8;
+}
+
+.hero-side{
+  gap:16px;
+}
+
+.metric{
+  padding:22px;
+  min-height:120px;
+}
+
+.grid,
+.cred-grid,
+.contact-grid{
+  gap:26px;
+}
+
+.card{
+  min-height:345px;
+}
+
+.card-body{
+  padding:24px;
+}
+
+.card h2{
+  margin-bottom:12px;
+}
+
+.card p{
+  line-height:1.72;
+}
+
+.card-meta{
+  margin-top:20px;
+}
+
+.card-link{
+  margin-top:22px;
+}
+
+.feature-grid{
+  gap:26px;
+}
+
+.panel{
+  padding:30px;
+}
+
+.panel h2{
+  margin-bottom:16px;
+}
+
+.panel p,
+.panel li{
+  line-height:1.82;
+}
+
+.panel h2:not(:first-child){
+  margin-top:30px;
+}
+
+.detail-hero{
+  padding:40px;
+  margin-bottom:28px;
+}
+
+.detail-hero p{
+  line-height:1.8;
+}
+
+.kpis{
+  gap:16px;
+  margin-top:30px;
+}
+
+.kpi{
+  padding:20px;
+}
+
+.gallery{
+  gap:18px;
+}
+
+.ph{
+  min-height:220px;
+}
+
+.cred{
+  padding:30px;
+  min-height:310px;
+}
+
+.cred p{
+  line-height:1.75;
+}
+
+.contact-card{
+  padding:30px;
+  min-height:280px;
+}
+
+.contact-card p{
+  line-height:1.75;
+}
+
+.footer{
+  margin-top:28px;
+  min-height:58px;
+  padding:0 24px;
+}
+
+/* Add more breathing room between major content areas */
+.grid + .footer,
+.feature-grid + .footer,
+.cred-grid + .footer,
+.contact-grid + .footer{
+  margin-top:32px;
+}
+
+@media(max-width:1050px){
+  .page{
+    width:min(100% - 36px,1480px);
+  }
+
+  .hero{
+    padding:30px;
+  }
+}
+
+@media(max-width:700px){
+  .page{
+    width:min(100% - 24px,1480px);
+    margin:12px auto;
+  }
+
+  .topnav{
+    margin-bottom:20px;
+  }
+
+  .hero{
+    padding:24px;
+    margin-bottom:22px;
+  }
+
+  .grid,
+  .cred-grid,
+  .contact-grid{
+    gap:18px;
+  }
+
+  .panel,
+  .detail-hero,
+  .cred,
+  .contact-card{
+    padding:22px;
+  }
 }

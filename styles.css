@@ -414,332 +414,179 @@ footer{
   .stats div:nth-child(3){border-left:0;padding-left:0}
 }
 
+
 /* =========================================================
-   DESKTOP ONE-SCREEN FIT
-   Shrinks dashboard vertically on normal laptop displays
+   WHITESPACE / BREATHING ROOM UPDATE
    ========================================================= */
 
-@media (min-width: 1100px) and (max-height: 950px) {
+.site-shell{
+  width:min(1720px,calc(100vw - 64px));
+  margin:32px auto;
+  gap:26px;
+}
 
-  .site-shell {
-    width: min(1740px, calc(100vw - 24px));
-    margin: 12px auto;
-    gap: 16px;
+.dashboard{
+  gap:26px;
+}
+
+.topbar{
+  padding:0 8px;
+  margin-bottom:4px;
+}
+
+.sidebar{
+  padding:28px 20px;
+}
+
+.brand{
+  padding-top:10px;
+  padding-bottom:28px;
+}
+
+.nav{
+  gap:14px;
+}
+
+.nav a{
+  padding:16px 14px;
+}
+
+.hero{
+  padding:34px;
+  min-height:560px;
+}
+
+.hero-copy>p{
+  max-width:640px;
+  line-height:1.72;
+}
+
+.hero-actions{
+  margin-top:30px;
+}
+
+.stats{
+  padding-top:34px;
+}
+
+.stats div{
+  padding-left:24px;
+  padding-right:12px;
+}
+
+.right-column{
+  gap:24px;
+}
+
+.profile,
+.quick{
+  padding:24px;
+}
+
+.quick-grid{
+  gap:16px;
+}
+
+.quick-grid a{
+  padding:16px;
+}
+
+.bottom-grid{
+  gap:24px;
+}
+
+.feature-card{
+  min-height:315px;
+}
+
+.feature-content{
+  padding:18px 20px 20px;
+}
+
+.feature-card p{
+  line-height:1.58;
+}
+
+footer{
+  margin-top:4px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+/* Spacious desktop fit — still keeps the dashboard compact enough */
+@media (min-width:1100px) and (max-height:950px){
+  .site-shell{
+    width:min(1720px,calc(100vw - 36px));
+    margin:18px auto;
+    gap:20px;
   }
 
-  .sidebar {
-    min-height: calc(100vh - 24px);
-    top: 12px;
-    padding: 16px 14px;
-    border-radius: 22px;
+  .dashboard{
+    gap:18px;
   }
 
-  .brand {
-    padding-bottom: 10px;
+  .sidebar{
+    padding:20px 16px;
   }
 
-  .brand-title {
-    font-size: 1.25rem;
+  .brand{
+    padding-bottom:18px;
   }
 
-  .brand-sub {
-    font-size: 0.6rem;
+  .nav{
+    gap:9px;
   }
 
-  .nav {
-    gap: 6px;
+  .hero{
+    padding:24px;
+    min-height:445px;
   }
 
-  .nav a {
-    padding: 10px 10px;
+  .hero-actions{
+    margin-top:20px;
   }
 
-  .nav a span {
-    width: 28px;
-    height: 28px;
+  .stats{
+    padding-top:20px;
   }
 
-  .side-bottom p {
-    margin-top: 12px;
-    font-size: 0.78rem;
-  }
-
-  .side-words span {
-    font-size: 0.58rem;
-  }
-
-  .dashboard {
-    gap: 12px;
-  }
-
-  .topbar {
-    height: 42px;
-  }
-
-  .process {
-    font-size: 0.64rem;
-  }
-
-  .search {
-    height: 40px;
-  }
-
-  .top-grid {
-    gap: 12px;
-  }
-
-  .hero {
-    min-height: 420px;
-    padding: 20px;
-  }
-
-  .hero h1 {
-    font-size: clamp(2.7rem, 4vw, 4.5rem);
-    margin: 14px 0 14px;
-  }
-
-  .hero-copy > p {
-    font-size: 0.88rem;
-    line-height: 1.5;
-  }
-
-  .eyebrow {
-    padding: 7px 12px;
-    font-size: 0.62rem;
-  }
-
-  .hero-actions {
-    margin-top: 18px;
-  }
-
-  .btn {
-    min-height: 42px;
-    padding: 0 18px;
-    font-size: 0.82rem;
-  }
-
-  .stats {
-    padding-top: 16px;
-  }
-
-  .stats strong {
-    font-size: 1.5rem;
-  }
-
-  .stats span {
-    font-size: 0.68rem;
+  .right-column{
+    gap:16px;
   }
 
   .profile,
-  .quick {
-    padding: 16px;
-    border-radius: 21px;
+  .quick{
+    padding:18px;
   }
 
-  .avatar {
-    width: 64px;
-    height: 64px;
-    min-width: 64px;
+  .quick-grid{
+    gap:10px;
   }
 
-  .profile h2 {
-    font-size: 1.05rem;
+  .bottom-grid{
+    gap:16px;
   }
 
-  .profile p,
-  .profile blockquote {
-    font-size: 0.72rem;
+  .feature-card{
+    min-height:235px;
   }
 
-  .quick h3 {
-    font-size: 1.05rem;
-    margin-bottom: 10px;
-  }
-
-  .quick-grid {
-    gap: 8px;
-  }
-
-  .quick-grid a {
-    min-height: 108px;
-    padding: 11px;
-  }
-
-  .quick-grid i {
-    width: 32px;
-    height: 32px;
-  }
-
-  .quick-grid strong {
-    font-size: 0.78rem;
-    margin-top: 7px;
-  }
-
-  .quick-grid small {
-    font-size: 0.64rem;
-  }
-
-  .bottom-grid {
-    gap: 12px;
-  }
-
-  .feature-card {
-    min-height: 220px;
-    border-radius: 20px;
-  }
-
-  .image {
-    height: 105px;
-  }
-
-  .feature-content {
-    padding: 12px 14px 12px;
-  }
-
-  .feature-icon {
-    width: 36px;
-    height: 36px;
-    margin-top: -30px;
-  }
-
-  .feature-card h2 {
-    font-size: 1rem;
-    margin: 7px 0 4px;
-  }
-
-  .feature-card p {
-    font-size: 0.66rem;
-    min-height: 34px;
-  }
-
-  .feature-bottom {
-    margin-top: 8px;
-  }
-
-  .feature-bottom b {
-    width: 30px;
-    height: 30px;
-  }
-
-  footer {
-    height: 24px;
-    font-size: 0.52rem;
+  .feature-content{
+    padding:13px 15px 14px;
   }
 }
-/* =========================================================
-   REAL IMAGE BACKGROUNDS
-   ========================================================= */
 
-/* HERO / T-SHIRT LAUNCHER */
-.hero-art {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(10, 15, 20, 0.15),
-      rgba(10, 15, 20, 0.25)
-    ),
-    url("assets/industrial-launcher.png");
+@media(max-width:820px){
+  .site-shell{
+    width:min(100% - 28px,1720px);
+    margin:14px auto;
+  }
 
-  background-size: cover;
-  background-position: center;
-  border-radius: 18px;
-  overflow: hidden;
-}
+  .dashboard{
+    gap:20px;
+  }
 
-/* Hide the old CSS launcher drawing */
-.launcher,
-.blueprint {
-  display: none;
-}
-
-/* PROJECTS CARD */
-.visual-project {
-  background:
-    linear-gradient(
-      rgba(9, 14, 19, 0.18),
-      rgba(9, 14, 19, 0.48)
-    ),
-    url("assets/precision-gears.png");
-
-  background-size: cover;
-  background-position: center;
-}
-
-/* Hide old fake gear shapes */
-.visual-project .gear,
-.visual-project .shaft {
-  display: none;
-}
-
-/* EXPERIENCE CARD */
-.visual-work {
-  background:
-    linear-gradient(
-      rgba(8, 13, 18, 0.16),
-      rgba(8, 13, 18, 0.44)
-    ),
-    url("assets/welding-workshop.png");
-
-  background-size: cover;
-  background-position: center;
-}
-
-/* Hide old welding placeholder graphics */
-.visual-work .work-glow,
-.visual-work .work-line {
-  display: none;
-}
-
-/* CREDENTIALS CARD */
-.visual-creds {
-  background:
-    linear-gradient(
-      rgba(10, 15, 20, 0.16),
-      rgba(10, 15, 20, 0.48)
-    ),
-    url("assets/engineering-workspace.png");
-
-  background-size: cover;
-  background-position: center;
-}
-
-/* Hide old fake certificate cards */
-.visual-creds .cert {
-  display: none;
-}
-
-/* CONTACT CARD */
-.visual-contact {
-  background:
-    linear-gradient(
-      rgba(9, 14, 20, 0.08),
-      rgba(9, 14, 20, 0.30)
-    ),
-    url("assets/mountain-sunset.png");
-
-  background-size: cover;
-  background-position: center;
-}
-
-/* Hide old fake mountain drawing */
-.visual-contact .sun,
-.visual-contact .mountain {
-  display: none;
-}
-/* =========================================================
-   FULL WEBSITE BACKGROUND
-   ========================================================= */
-
-body {
-  background:
-    linear-gradient(
-      rgba(5, 10, 15, 0.84),
-      rgba(5, 10, 15, 0.90)
-    ),
-    url("assets/mountain-sunset.png");
-
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  .hero{
+    padding:26px;
+  }
 }
