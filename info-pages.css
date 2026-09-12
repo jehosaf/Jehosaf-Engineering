@@ -397,3 +397,88 @@ body{
 .eyebrow{
   background:#ffffff !important;
 }
+
+
+/* =========================================================
+   SUBTLE HOVER POP / BUBBLE EFFECT
+   ========================================================= */
+
+/* Top navigation tabs */
+.navlinks a{
+  transition:
+    transform .18s ease,
+    background-color .18s ease,
+    box-shadow .18s ease,
+    border-color .18s ease;
+  transform-origin:center;
+}
+
+.navlinks a:hover{
+  transform:scale(1.04);
+  box-shadow:0 6px 16px rgba(0,0,0,.08);
+}
+
+/* Closed list rows only */
+.clean-item{
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    border-color .18s ease;
+  transform-origin:center;
+}
+
+.clean-item:not([open]):hover{
+  transform:scale(1.015);
+  box-shadow:0 12px 28px rgba(0,0,0,.10) !important;
+  border-color:#cfd5d9 !important;
+}
+
+/* Credentials / Contact cards */
+.credential-card,
+.contact-card{
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    border-color .18s ease;
+  transform-origin:center;
+}
+
+.credential-card:hover,
+.contact-card:hover{
+  transform:scale(1.018);
+  box-shadow:0 14px 30px rgba(0,0,0,.10) !important;
+  border-color:#cfd5d9 !important;
+}
+
+/* Buttons / links get a very tiny response */
+.verify-link,
+.contact-link,
+.case-back,
+.clean-link{
+  transition:
+    transform .16s ease,
+    color .16s ease;
+  transform-origin:left center;
+}
+
+.verify-link:hover,
+.contact-link:hover,
+.case-back:hover,
+.clean-link:hover{
+  transform:translateX(3px);
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce){
+  .navlinks a,
+  .clean-item,
+  .credential-card,
+  .contact-card,
+  .verify-link,
+  .contact-link,
+  .case-back,
+  .clean-link{
+    transition:none !important;
+    transform:none !important;
+  }
+}
