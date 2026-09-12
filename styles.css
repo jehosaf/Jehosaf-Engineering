@@ -726,3 +726,20 @@ footer{
 .visual-contact .mountain {
   display: none;
 }
+/* =========================================================
+   FULL WEBSITE BACKGROUND
+   ========================================================= */
+
+body {
+  background:
+    linear-gradient(
+      rgba(5, 10, 15, 0.84),
+      rgba(5, 10, 15, 0.90)
+    ),
+    url("assets/mountain-sunset.png");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
