@@ -252,6 +252,43 @@ a{color:inherit}
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:10px;
+  <div class="more-work-toggle-wrap">
+  <button class="more-work-toggle" type="button">
+    View More Work
+  </button>
+</div>
+
+<div class="more-work-gallery">
+
+  <div class="gallery-photo">
+    <img
+      class="zoomable-media"
+      src="/Jehosaf-Engineering/assets/alamo-marketing-4.jpg"
+      alt="Additional Alamo Group marketing work">
+  </div>
+
+  <div class="gallery-photo">
+    <img
+      class="zoomable-media"
+      src="/Jehosaf-Engineering/assets/alamo-marketing-5.jpg"
+      alt="Additional Blender visualization work">
+  </div>
+
+  <div class="gallery-photo">
+    <img
+      class="zoomable-media"
+      src="/Jehosaf-Engineering/assets/alamo-marketing-6.jpg"
+      alt="Additional product visualization">
+  </div>
+
+  <div class="gallery-photo">
+    <img
+      class="zoomable-media"
+      src="/Jehosaf-Engineering/assets/alamo-marketing-7.jpg"
+      alt="Additional marketing render">
+  </div>
+
+</div>
 }
 
 .gallery-photo,
