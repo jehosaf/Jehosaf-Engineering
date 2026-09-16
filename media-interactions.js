@@ -1,12 +1,12 @@
-
 /* JEHOSAF Media Interactions */
-
 document.addEventListener("DOMContentLoaded", () => {
-  // Build one reusable lightbox.
+
+  // Build one reusable image lightbox.
   const lightbox = document.createElement("div");
   lightbox.id = "media-lightbox";
   lightbox.className = "media-lightbox";
   lightbox.setAttribute("aria-hidden", "true");
+
   lightbox.innerHTML = `
     <button class="media-lightbox-close" type="button" aria-label="Close image">×</button>
     <div class="media-lightbox-inner">
@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="media-lightbox-caption"></div>
     </div>
   `;
+
   document.body.appendChild(lightbox);
 
   const lightboxImage = lightbox.querySelector(".media-lightbox-image");
@@ -25,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
     lightboxImage.alt = img.alt || "";
     caption.textContent = img.alt || "";
     caption.style.display = img.alt ? "block" : "none";
-
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.classList.add("lightbox-open");
@@ -63,38 +63,42 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-      closeLightbox();
-    }
+    if (event.key === "Escape") closeLightbox();
   });
 
-  // Hover-to-play video behavior.
+
+  // Video behavior:
+  // Desktop = hover plays, mouse leave pauses/resets.
+  // Mobile/touch = native video controls handle playback.
+  const desktopHover = window.matchMedia(
+    "(hover: hover) and (pointer: fine)"
+  ).matches;
+
   document.querySelectorAll(".hover-video").forEach((video) => {
+
     video.muted = true;
     video.playsInline = true;
 
+    if (!desktopHover) return;
+
     const startVideo = () => {
-      const promise = video.play();
-      if (promise !== undefined) {
-        promise.catch(() => {});
+      const playPromise = video.play();
+
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {});
       }
     };
 
     const stopVideo = () => {
       video.pause();
-      video.currentTime = 0;
+
+      try {
+        video.currentTime = 0;
+      } catch (error) {}
     };
 
     video.addEventListener("mouseenter", startVideo);
     video.addEventListener("mouseleave", stopVideo);
-
-    // Touch/mobile fallback: tap video to play/pause.
-    video.addEventListener("click", () => {
-      if (video.paused) {
-        startVideo();
-      } else {
-        stopVideo();
-      }
-    });
   });
+
 });
