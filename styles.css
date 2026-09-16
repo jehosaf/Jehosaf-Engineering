@@ -984,3 +984,6 @@ footer{
   object-position: center center;
   display: block;
 }
+.hero-art {
+  max-height: 620px;
+}
