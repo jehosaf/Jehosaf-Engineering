@@ -1,22 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | JEHOSAF</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | JEHOSAF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/Jehosaf-Engineering/info-pages.css">
+<link rel="stylesheet" href="/Jehosaf-Engineering/universal-header.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+.contact-hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 180px;
+  gap:44px;
+  align-items:center;
+  max-width:1060px;
+  margin:28px auto 36px;
+}
 
-  <link rel="stylesheet" href="info-pages.css">
-  <link rel="stylesheet" href="/Jehosaf-Engineering/universal-header.css">
+.contact-photo-slot{
+  width:180px;
+  aspect-ratio:4/5;
+  border-radius:22px;
+  overflow:hidden;
+  border:1px solid #d8dde0;
+  background:#fff;
+  box-shadow:0 12px 30px rgba(20,30,35,.06);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.contact-photo-slot img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 35%;
+  display:block;
+}
+
+.contact-photo-placeholder{
+  padding:20px;
+  text-align:center;
+  font-size:.78rem;
+  line-height:1.5;
+  color:#8a9196;
+}
+
+.contact-grid{
+  max-width:1060px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+}
+
+.contact-card{
+  background:#fff;
+  border:1px solid #d8dde0;
+  border-radius:20px;
+  padding:26px;
+  min-height:220px;
+  display:flex;
+  flex-direction:column;
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+
+.contact-card:hover{
+  transform:scale(1.015);
+  box-shadow:0 14px 30px rgba(20,30,35,.07);
+}
+
+.contact-icon{
+  width:54px;
+  height:54px;
+  border:1px solid #d8dde0;
+  border-radius:15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:18px;
+  font-weight:800;
+  color:#1f5a3a;
+  background:#fafbfb;
+}
+
+.contact-icon.linkedin{
+  background:#0A66C2;
+  border-color:#0A66C2;
+  color:#fff;
+  font-family:Arial,sans-serif;
+  font-size:1.25rem;
+  letter-spacing:-.04em;
+}
+
+.contact-icon svg{
+  width:21px;
+  height:21px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:1.8;
+}
+
+.contact-card h2{
+  margin:0 0 10px;
+  font-size:1.35rem;
+}
+
+.contact-card p{
+  margin:0 0 20px;
+  line-height:1.65;
+  color:#687078;
+}
+
+.contact-link{
+  margin-top:auto;
+  color:#1f5a3a;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.contact-link:hover{
+  text-decoration:underline;
+}
+
+.contact-footer{
+  max-width:1060px;
+  margin:28px auto 0;
+}
+
+@media(max-width:760px){
+  .contact-hero-grid{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .contact-photo-slot{
+    width:145px;
+    justify-self:start;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
 </head>
 
 <body>
 <div class="page">
 
-  
 <header class="universal-header">
   <a class="universal-brand" href="/Jehosaf-Engineering/index.html">
     <span class="universal-brand-main">JEHOSAF</span>
@@ -47,96 +182,111 @@
   </div>
 </header>
 
+<section class="contact-hero-grid">
 
-
-  <section class="page-intro">
+  <div class="info-intro">
     <div class="eyebrow">CONTACT</div>
-
-    <h1>
-      Let’s talk <span>engineering.</span>
-    </h1>
-
+    <h1>Let’s talk <span>engineering.</span></h1>
     <p>
       For engineering opportunities, project collaboration, or professional networking,
       you can reach me directly through the options below.
     </p>
-  </section>
-
-
-  <section class="content-wrap contact-grid">
-
-    <article class="contact-card">
-      <div class="contact-icon">✉</div>
-
-      <h2>Email</h2>
-
-      <p>
-        Best for direct opportunities, introductions, project questions,
-        or professional communication.
-      </p>
-
-      <a
-        class="contact-link"
-        href="mailto:danieljehperez@gmail.com">
-        danieljehperez@gmail.com →
-      </a>
-    </article>
-
-
-    <article class="contact-card">
-      <div class="contact-icon">in</div>
-
-      <h2>LinkedIn</h2>
-
-      <p>
-        Connect professionally, view my current experience,
-        and keep up with future engineering work.
-      </p>
-
-      <a
-        class="contact-link"
-        href="https://www.linkedin.com/in/jehosaf-perez-beltran-72b739189/"
-        target="_blank">
-        Open LinkedIn →
-      </a>
-    </article>
-
-
-    <article class="contact-card">
-      <div class="contact-icon">▤</div>
-
-      <h2>Resume</h2>
-
-      <p>
-        Use my one-page resume for a quick overview,
-        then return to this portfolio for the deeper project and experience details.
-      </p>
-
-      <a
-        class="contact-link"
-        href="resume.pdf"
-        target="_blank">
-        View Resume PDF →
-      </a>
-    </article>
-
-  </section>
-
-
-  <div class="contact-note">
-    I am especially interested in mechanical engineering opportunities involving
-    design, manufacturing, testing, hands-on problem solving, and early-career development.
   </div>
 
+  <div class="contact-photo-slot">
+    <!--
+      When your photo is ready, replace the placeholder below with:
 
+      <img
+        src="/Jehosaf-Engineering/assets/YOUR-PHOTO.jpeg"
+        alt="Jehosaf Perez">
+    -->
+
+    <div class="contact-photo-placeholder">
+      Add a relaxed chest-up or waist-up photo here
+    </div>
+  </div>
+
+</section>
+
+<section class="contact-grid">
+
+  <article class="contact-card">
+    <div class="contact-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24">
+        <rect x="3.5" y="5.5" width="17" height="13" rx="2"></rect>
+        <path d="M4.5 7l7.5 6 7.5-6"></path>
+      </svg>
+    </div>
+
+    <h2>Email</h2>
+    <p>
+      Best for direct opportunities, introductions, project questions,
+      or professional communication.
+    </p>
+
+    <a class="contact-link" href="mailto:danieljehperez@gmail.com">
+      danieljehperez@gmail.com →
+    </a>
+  </article>
+
+
+  <article class="contact-card">
+    <div class="contact-icon linkedin" aria-hidden="true">in</div>
+
+    <h2>LinkedIn</h2>
+    <p>
+      Connect professionally, view my current experience,
+      and keep up with future engineering work.
+    </p>
+
+    <a
+      class="contact-link"
+      href="https://www.linkedin.com/in/jehosaf-perez-beltran-72b739189/"
+      target="_blank"
+      rel="noopener noreferrer">
+      Open LinkedIn →
+    </a>
+  </article>
+
+
+  <article class="contact-card">
+    <div class="contact-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24">
+        <path d="M6 3.5h8l4 4v13H6z"></path>
+        <path d="M14 3.5v4h4"></path>
+        <path d="M9 12h6M9 15h6"></path>
+      </svg>
+    </div>
+
+    <h2>Resume</h2>
+    <p>
+      Use my one-page resume for a quick overview,
+      then return to this portfolio for deeper project
+      and experience details.
+    </p>
+
+    <a
+      class="contact-link"
+      href="/Jehosaf-Engineering/resume.pdf"
+      target="_blank">
+      View Resume PDF →
+    </a>
+  </article>
+
+</section>
+
+<div class="contact-footer">
   <footer class="footer">
     <span>TEXAS STATE UNIVERSITY</span>
     <span>MECHANICAL ENGINEERING</span>
     <span>CLASS OF 2027</span>
     <span>BUILT WITH PURPOSE</span>
   </footer>
+</div>
 
 </div>
-  <script src="/Jehosaf-Engineering/universal-search.js"></script>
+
+<script src="/Jehosaf-Engineering/universal-search.js"></script>
 </body>
 </html>
