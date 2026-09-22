@@ -14,28 +14,6 @@
 .project-highlight strong{display:block;margin-bottom:6px;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:#1f5a3a}
 .project-highlight p{margin:0}
 </style>
-
-<style>
-.photo-gallery-wrap{margin-top:14px}
-.gallery-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.gallery-photo{overflow:hidden;border-radius:14px;aspect-ratio:4/3;background:#eef0f2}
-.gallery-photo img{width:100%;height:100%;object-fit:cover;display:block}
-.gallery-more-button{
-  width:100%;margin-top:12px;padding:12px 16px;border:1px solid #d7dcdf;
-  border-radius:12px;background:#fff;font:inherit;font-weight:600;cursor:pointer
-}
-.gallery-more-button:hover{transform:scale(1.01)}
-.extra-gallery{
-  display:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px
-}
-.extra-gallery.open{display:grid}
-.extra-gallery .gallery-photo{aspect-ratio:4/3}
-@media(max-width:700px){
-  .gallery-strip{grid-template-columns:1fr 1fr 1fr}
-  .extra-gallery{grid-template-columns:1fr}
-}
-</style>
-
 </head>
 
 <body>
@@ -251,37 +229,23 @@ construction efficiency, material waste, project scheduling, and the usability o
 
 <aside class="case-visual">
   <div class="main-photo">
-    <img class="zoomable-media" src="/Jehosaf-Engineering/assets/engineering-workspace.png" alt="Two-story garage build">
+    <img
+      class="zoomable-media"
+      src="/Jehosaf-Engineering/assets/Josias-Project-2.jpeg"
+      alt="Two-story garage build">
   </div>
+
   <p class="visual-caption">
     Two-story garage project combining protected vehicle storage with residential accommodations above.
   </p>
 
-  <div class="photo-gallery-wrap">
-
-    <div class="gallery-strip">
-      <!-- Add up to three preview images here when filenames are ready. -->
+  <div class="gallery-strip" style="grid-template-columns:1fr;">
+    <div class="gallery-photo">
+      <img
+        class="zoomable-media"
+        src="/Jehosaf-Engineering/assets/Josias-Project-6.jpeg"
+        alt="Two-story garage construction progress">
     </div>
-
-    <button
-      class="gallery-more-button"
-      type="button"
-      data-gallery-toggle="garage-extra-gallery"
-      aria-expanded="false">
-      View More Photos
-    </button>
-
-    <div class="extra-gallery" id="garage-extra-gallery">
-      <!-- Add additional garage images here.
-      Example:
-      <div class="gallery-photo">
-        <img class="zoomable-media"
-             src="/Jehosaf-Engineering/assets/YOUR-GARAGE-PHOTO.jpeg"
-             alt="Two-story garage construction">
-      </div>
-      -->
-    </div>
-
   </div>
 </aside>
 
@@ -302,27 +266,5 @@ construction efficiency, material waste, project scheduling, and the usability o
 
 <script src="/Jehosaf-Engineering/media-interactions.js"></script>
 <script src="/Jehosaf-Engineering/universal-search.js"></script>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("[data-gallery-toggle]").forEach(button => {
-    const target = document.getElementById(button.dataset.galleryToggle);
-    if (!target) return;
-
-    const photos = target.querySelectorAll("img");
-    if (!photos.length) {
-      button.hidden = true;
-      return;
-    }
-
-    button.addEventListener("click", () => {
-      const isOpen = target.classList.toggle("open");
-      button.textContent = isOpen ? "Show Fewer Photos" : "View More Photos";
-      button.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    });
-  });
-});
-</script>
-
 </body>
 </html>
