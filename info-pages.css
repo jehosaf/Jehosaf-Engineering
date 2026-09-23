@@ -445,19 +445,30 @@ body{
 
 
 
-/* ===== Credentials CTA spacing refinement ===== */
-.credential-card .verify-link,
-.credentials-card .verify-link,
-.credential-item .verify-link,
-.verify-link{
-  margin-top:22px !important;
+
+
+/* ===== Credentials CTA alignment fix ===== */
+.credential-card{
+  display:flex !important;
+  flex-direction:column !important;
+  height:100%;
+}
+
+.credential-meta{
+  margin-bottom:18px !important;
+}
+
+.credential-card .verify-link{
+  margin-top:auto !important;
+  flex-shrink:0;
 }
 
 @media(max-width:700px){
-  .credential-card .verify-link,
-  .credentials-card .verify-link,
-  .credential-item .verify-link,
-  .verify-link{
-    margin-top:18px !important;
+  .credential-meta{
+    margin-bottom:16px !important;
+  }
+
+  .credential-card .verify-link{
+    margin-top:auto !important;
   }
 }
