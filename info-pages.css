@@ -399,86 +399,47 @@ body{
 }
 
 
-/* =========================================================
-   SUBTLE HOVER POP / BUBBLE EFFECT
-   ========================================================= */
-
-/* Top navigation tabs */
-.navlinks a{
-  transition:
-    transform .18s ease,
-    background-color .18s ease,
-    box-shadow .18s ease,
-    border-color .18s ease;
-  transform-origin:center;
-}
-
-.navlinks a:hover{
-  transform:scale(1.04);
-  box-shadow:0 6px 16px rgba(0,0,0,.08);
-}
-
-/* Closed list rows only */
-.clean-item{
-  transition:
-    transform .18s ease,
-    box-shadow .18s ease,
-    border-color .18s ease;
-  transform-origin:center;
-}
-
-.clean-item:not([open]):hover{
-  transform:scale(1.015);
-  box-shadow:0 12px 28px rgba(0,0,0,.10) !important;
-  border-color:#cfd5d9 !important;
-}
-
-/* Credentials / Contact cards */
-.credential-card,
-.contact-card{
-  transition:
-    transform .18s ease,
-    box-shadow .18s ease,
-    border-color .18s ease;
-  transform-origin:center;
-}
-
-.credential-card:hover,
-.contact-card:hover{
-  transform:scale(1.018);
-  box-shadow:0 14px 30px rgba(0,0,0,.10) !important;
-  border-color:#cfd5d9 !important;
-}
-
-/* Buttons / links get a very tiny response */
+/* ===== Strong credentials/contact CTA buttons ===== */
 .verify-link,
-.contact-link,
-.case-back,
-.clean-link{
-  transition:
-    transform .16s ease,
-    color .16s ease;
-  transform-origin:left center;
+.contact-link{
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin-top:auto !important;
+  padding:12px 16px !important;
+  min-height:44px;
+  border:1px solid #cbd6d0;
+  border-radius:12px;
+  background:#f5f8f6;
+  color:#174d35 !important;
+  font-size:.88rem !important;
+  font-weight:800 !important;
+  line-height:1.2;
+  text-decoration:none !important;
+  box-shadow:0 4px 12px rgba(20,55,38,.05);
+  transition:transform .16s ease, box-shadow .16s ease, background .16s ease;
 }
 
 .verify-link:hover,
-.contact-link:hover,
-.case-back:hover,
-.clean-link:hover{
-  transform:translateX(3px);
+.contact-link:hover{
+  transform:translateY(-1px) scale(1.015);
+  background:#edf4f0;
+  box-shadow:0 7px 18px rgba(20,55,38,.09);
+  text-decoration:none !important;
 }
 
-/* Respect reduced-motion preference */
-@media (prefers-reduced-motion: reduce){
-  .navlinks a,
-  .clean-item,
-  .credential-card,
-  .contact-card,
+@media(max-width:700px){
   .verify-link,
-  .contact-link,
-  .case-back,
-  .clean-link{
-    transition:none !important;
-    transform:none !important;
+  .contact-link{
+    display:flex !important;
+    width:100%;
+    box-sizing:border-box;
+    padding:15px 16px !important;
+    min-height:50px;
+    font-size:.98rem !important;
+    border-radius:14px;
+    text-align:center;
   }
 }
+
