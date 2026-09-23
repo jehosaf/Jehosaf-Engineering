@@ -68,6 +68,87 @@ body{
 }
 </style>
 
+
+<style>
+/* =========================================================
+   HOME PAGE CONTRAST TEST V2
+   Darker gray + shorter/darker shadows + restored footer tab
+   ========================================================= */
+
+body{
+  background:#e5e8ea !important;
+}
+
+/* Main white surfaces */
+.universal-header,
+.hero-card,
+.profile-card,
+.quick-card,
+.feature-card{
+  background:#ffffff !important;
+  border-color:#cfd5d8 !important;
+  box-shadow:
+    0 7px 16px rgba(20,28,33,.16),
+    0 1px 3px rgba(20,28,33,.08) !important;
+}
+
+/* Quick Access inner cards */
+.quick-grid a{
+  background:#ffffff !important;
+  border-color:#cfd5d8 !important;
+  box-shadow:
+    0 4px 8px rgba(20,28,33,.11),
+    0 1px 2px rgba(20,28,33,.05) !important;
+}
+
+/* Search field */
+.universal-search-box{
+  background:#ffffff !important;
+  border-color:#cfd5d8 !important;
+}
+
+/* Slightly stronger hover without a giant glow */
+.feature-card:hover{
+  box-shadow:
+    0 9px 20px rgba(20,28,33,.19),
+    0 2px 4px rgba(20,28,33,.07) !important;
+}
+
+/* Restore footer as a visible rounded white tab */
+.page-shell > footer{
+  background:#ffffff !important;
+  border:1px solid #cfd5d8 !important;
+  border-radius:16px !important;
+  padding:14px 20px !important;
+  margin-top:18px !important;
+  margin-bottom:18px !important;
+  box-shadow:
+    0 6px 14px rgba(20,28,33,.14),
+    0 1px 3px rgba(20,28,33,.06) !important;
+}
+
+/* Mobile */
+@media(max-width:700px){
+  .universal-header,
+  .hero-card,
+  .profile-card,
+  .quick-card,
+  .feature-card{
+    box-shadow:
+      0 6px 13px rgba(20,28,33,.14),
+      0 1px 3px rgba(20,28,33,.06) !important;
+  }
+
+  .page-shell > footer{
+    border-radius:14px !important;
+    padding:14px 16px !important;
+    box-shadow:
+      0 5px 11px rgba(20,28,33,.12),
+      0 1px 2px rgba(20,28,33,.05) !important;
+  }
+}
+</style>
+
 </head>
 
 <body>
