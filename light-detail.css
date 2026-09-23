@@ -252,43 +252,6 @@ a{color:inherit}
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:10px;
-  <div class="more-work-toggle-wrap">
-  <button class="more-work-toggle" type="button">
-    View More Work
-  </button>
-</div>
-
-<div class="more-work-gallery">
-
-  <div class="gallery-photo">
-    <img
-      class="zoomable-media"
-      src="/Jehosaf-Engineering/assets/alamo-marketing-4.jpg"
-      alt="Additional Alamo Group marketing work">
-  </div>
-
-  <div class="gallery-photo">
-    <img
-      class="zoomable-media"
-      src="/Jehosaf-Engineering/assets/alamo-marketing-5.jpg"
-      alt="Additional Blender visualization work">
-  </div>
-
-  <div class="gallery-photo">
-    <img
-      class="zoomable-media"
-      src="/Jehosaf-Engineering/assets/alamo-marketing-6.jpg"
-      alt="Additional product visualization">
-  </div>
-
-  <div class="gallery-photo">
-    <img
-      class="zoomable-media"
-      src="/Jehosaf-Engineering/assets/alamo-marketing-7.jpg"
-      alt="Additional marketing render">
-  </div>
-
-</div>
 }
 
 .gallery-photo,
@@ -676,85 +639,81 @@ body{
 
 
 /* =========================================================
-   SUBTLE HOVER POP / BUBBLE EFFECT
+   SITEWIDE CONTRAST SYSTEM
+   Matches homepage V2 direction
    ========================================================= */
 
-/* Top navigation tabs */
-.navlinks a{
-  transition:
-    transform .18s ease,
-    background-color .18s ease,
-    box-shadow .18s ease,
-    border-color .18s ease;
-  transform-origin:center;
+body{
+  background:#e5e8ea !important;
 }
 
-.navlinks a:hover{
-  transform:scale(1.04);
-  box-shadow:0 6px 16px rgba(0,0,0,.08);
+/* Shared header */
+.universal-header{
+  background:#ffffff !important;
+  border-color:#cfd5d8 !important;
+  box-shadow:
+    0 7px 16px rgba(20,28,33,.16),
+    0 1px 3px rgba(20,28,33,.08) !important;
 }
 
-/* Closed list rows only */
-.clean-item{
-  transition:
-    transform .18s ease,
-    box-shadow .18s ease,
-    border-color .18s ease;
-  transform-origin:center;
+.universal-search-box{
+  background:#ffffff !important;
+  border-color:#cfd5d8 !important;
 }
 
-.clean-item:not([open]):hover{
-  transform:scale(1.015);
-  box-shadow:0 12px 28px rgba(0,0,0,.10) !important;
-  border-color:#cfd5d9 !important;
+/* Shared footer tab */
+.footer{
+  background:#ffffff !important;
+  border-color:#cfd5d8 !important;
+  box-shadow:
+    0 6px 14px rgba(20,28,33,.14),
+    0 1px 3px rgba(20,28,33,.06) !important;
 }
 
-/* Credentials / Contact cards */
-.credential-card,
-.contact-card{
-  transition:
-    transform .18s ease,
-    box-shadow .18s ease,
-    border-color .18s ease;
-  transform-origin:center;
-}
+/* Mobile keeps the effect, slightly reduced */
+@media(max-width:700px){
+  .universal-header{
+    box-shadow:
+      0 6px 13px rgba(20,28,33,.14),
+      0 1px 3px rgba(20,28,33,.06) !important;
+  }
 
-.credential-card:hover,
-.contact-card:hover{
-  transform:scale(1.018);
-  box-shadow:0 14px 30px rgba(0,0,0,.10) !important;
-  border-color:#cfd5d9 !important;
-}
-
-/* Buttons / links get a very tiny response */
-.verify-link,
-.contact-link,
-.case-back,
-.clean-link{
-  transition:
-    transform .16s ease,
-    color .16s ease;
-  transform-origin:left center;
-}
-
-.verify-link:hover,
-.contact-link:hover,
-.case-back:hover,
-.clean-link:hover{
-  transform:translateX(3px);
-}
-
-/* Respect reduced-motion preference */
-@media (prefers-reduced-motion: reduce){
-  .navlinks a,
-  .clean-item,
-  .credential-card,
-  .contact-card,
-  .verify-link,
-  .contact-link,
-  .case-back,
-  .clean-link{
-    transition:none !important;
-    transform:none !important;
+  .footer{
+    box-shadow:
+      0 5px 11px rgba(20,28,33,.12),
+      0 1px 2px rgba(20,28,33,.05) !important;
   }
 }
+
+
+/* Detail-page image and utility cards */
+.main-photo,
+.project-highlight,
+.metric-card,
+.gallery-photo{
+  background:#ffffff !important;
+  border-color:#cfd5d8 !important;
+  box-shadow:
+    0 7px 16px rgba(20,28,33,.16),
+    0 1px 3px rgba(20,28,33,.08) !important;
+}
+
+.case-back{
+  background:#ffffff !important;
+  border-color:#cfd5d8 !important;
+  box-shadow:
+    0 4px 9px rgba(20,28,33,.10),
+    0 1px 2px rgba(20,28,33,.05) !important;
+}
+
+@media(max-width:700px){
+  .main-photo,
+  .project-highlight,
+  .metric-card,
+  .gallery-photo{
+    box-shadow:
+      0 6px 13px rgba(20,28,33,.14),
+      0 1px 3px rgba(20,28,33,.06) !important;
+  }
+}
+

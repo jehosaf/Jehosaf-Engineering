@@ -472,3 +472,81 @@ body{
     margin-top:auto !important;
   }
 }
+
+
+/* =========================================================
+   SITEWIDE CONTRAST SYSTEM
+   Matches homepage V2 direction
+   ========================================================= */
+
+body{
+  background:#e5e8ea !important;
+}
+
+/* Shared header */
+.universal-header{
+  background:#ffffff !important;
+  border-color:#cfd5d8 !important;
+  box-shadow:
+    0 7px 16px rgba(20,28,33,.16),
+    0 1px 3px rgba(20,28,33,.08) !important;
+}
+
+.universal-search-box{
+  background:#ffffff !important;
+  border-color:#cfd5d8 !important;
+}
+
+/* Shared footer tab */
+.footer{
+  background:#ffffff !important;
+  border-color:#cfd5d8 !important;
+  box-shadow:
+    0 6px 14px rgba(20,28,33,.14),
+    0 1px 3px rgba(20,28,33,.06) !important;
+}
+
+/* Mobile keeps the effect, slightly reduced */
+@media(max-width:700px){
+  .universal-header{
+    box-shadow:
+      0 6px 13px rgba(20,28,33,.14),
+      0 1px 3px rgba(20,28,33,.06) !important;
+  }
+
+  .footer{
+    box-shadow:
+      0 5px 11px rgba(20,28,33,.12),
+      0 1px 2px rgba(20,28,33,.05) !important;
+  }
+}
+
+
+/* Credentials + Contact cards */
+.credential-card,
+.contact-card,
+.contact-photo-slot{
+  background:#ffffff !important;
+  border-color:#cfd5d8 !important;
+  box-shadow:
+    0 7px 16px rgba(20,28,33,.16),
+    0 1px 3px rgba(20,28,33,.08) !important;
+}
+
+.credential-card:hover,
+.contact-card:hover{
+  box-shadow:
+    0 9px 20px rgba(20,28,33,.18),
+    0 2px 4px rgba(20,28,33,.07) !important;
+}
+
+@media(max-width:700px){
+  .credential-card,
+  .contact-card,
+  .contact-photo-slot{
+    box-shadow:
+      0 6px 13px rgba(20,28,33,.14),
+      0 1px 3px rgba(20,28,33,.06) !important;
+  }
+}
+
