@@ -309,6 +309,52 @@ body{
 }
 </style>
 
+
+<style>
+/* =========================================================
+   SHORT HOMEPAGE BIO
+   ========================================================= */
+
+.home-bio-card{
+  margin:18px 0 18px;
+  padding:16px 20px;
+  background:#ffffff;
+  border:1px solid #cfd5d8;
+  border-radius:16px;
+  box-shadow:
+    0 6px 14px rgba(20,28,33,.14),
+    0 1px 3px rgba(20,28,33,.06);
+}
+
+.home-bio-label{
+  margin-bottom:6px;
+  font-size:.68rem;
+  font-weight:800;
+  letter-spacing:.12em;
+  color:#1f5a3a;
+}
+
+.home-bio-card p{
+  margin:0;
+  max-width:980px;
+  font-size:.92rem;
+  line-height:1.6;
+  color:#5f676d;
+}
+
+@media(max-width:700px){
+  .home-bio-card{
+    margin:16px 0;
+    padding:15px 16px;
+  }
+
+  .home-bio-card p{
+    font-size:.9rem;
+    line-height:1.55;
+  }
+}
+</style>
+
 </head>
 
 <body>
@@ -383,7 +429,7 @@ body{
             <span>Certifications</span>
           </div>
           <div>
-            <strong>5+</strong>
+            <strong>9+</strong>
             <span>Years Hands-On</span>
           </div>
           <div>
@@ -461,6 +507,15 @@ body{
 
     </aside>
 
+  </section>
+
+  <section class="home-bio-card">
+    <div class="home-bio-label">BUILT FROM EXPERIENCE</div>
+    <p>
+      I grew up around automotive repair and began helping with tools and hands-on work at a young age.
+      That early exposure shaped how I approach problems today: stay persistent, use the resources available,
+      and work through unfamiliar failures with a logical step-by-step process.
+    </p>
   </section>
 
   <section class="bottom-grid">
