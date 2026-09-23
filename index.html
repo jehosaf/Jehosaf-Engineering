@@ -582,6 +582,137 @@ body{
 }
 </style>
 
+
+<style>
+/* =========================================================
+   HOMEPAGE HERO — JEHOSAF DOMINANT
+   ========================================================= */
+
+/* Give the name more room and reduce the image footprint */
+.hero-card{
+  grid-template-columns:58% 42% !important;
+  gap:22px !important;
+}
+
+.hero-copy{
+  min-width:0 !important;
+}
+
+.hero-name{
+  margin:0 0 18px !important;
+  line-height:.84 !important;
+  letter-spacing:-.055em !important;
+}
+
+.hero-name-main{
+  display:block !important;
+  font-size:clamp(5.6rem, 8.6vw, 9rem) !important;
+  line-height:.84 !important;
+  font-weight:900 !important;
+  color:#17191b !important;
+  letter-spacing:-.055em !important;
+  white-space:nowrap !important;
+}
+
+/* Keep surname, but let JEHOSAF own the visual hierarchy */
+.hero-name-sub{
+  display:block !important;
+  margin-top:12px !important;
+  font-size:clamp(1.45rem, 2vw, 2.05rem) !important;
+  line-height:1 !important;
+  font-weight:800 !important;
+  color:#17191b !important;
+  letter-spacing:.15em !important;
+}
+
+/* Smaller welding image, still centered inside white card */
+.hero-art{
+  width:calc(100% - 24px) !important;
+  height:370px !important;
+  max-height:370px !important;
+  margin:12px !important;
+  justify-self:center !important;
+  align-self:center !important;
+}
+
+.hero-art img{
+  object-position:46% 44% !important;
+  filter:brightness(1.15) contrast(1.06) !important;
+}
+
+/* Tablet */
+@media(max-width:950px) and (min-width:701px){
+  .hero-card{
+    grid-template-columns:56% 44% !important;
+  }
+
+  .hero-name-main{
+    font-size:clamp(4.6rem, 8vw, 6.5rem) !important;
+  }
+
+  .hero-art{
+    height:330px !important;
+    max-height:330px !important;
+  }
+}
+
+/* Phone */
+@media(max-width:700px){
+  .hero-card{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:16px !important;
+  }
+
+  .hero-name{
+    margin-bottom:15px !important;
+  }
+
+  .hero-name-main{
+    font-size:clamp(4rem, 19vw, 6rem) !important;
+    line-height:.86 !important;
+    letter-spacing:-.055em !important;
+    white-space:nowrap !important;
+  }
+
+  .hero-name-sub{
+    margin-top:9px !important;
+    font-size:1.2rem !important;
+    letter-spacing:.14em !important;
+    color:#17191b !important;
+  }
+
+  .hero-art{
+    display:block !important;
+    width:calc(100% - 20px) !important;
+    height:190px !important;
+    min-height:190px !important;
+    max-height:190px !important;
+    margin:0 10px 10px !important;
+  }
+
+  .hero-art img{
+    object-position:48% 42% !important;
+  }
+}
+
+@media(max-width:420px){
+  .hero-name-main{
+    font-size:clamp(3.45rem, 18vw, 4.7rem) !important;
+  }
+
+  .hero-name-sub{
+    font-size:1.05rem !important;
+  }
+
+  .hero-art{
+    height:170px !important;
+    min-height:170px !important;
+    max-height:170px !important;
+  }
+}
+</style>
+
 </head>
 
 <body>
