@@ -1,3 +1,27 @@
+/* =========================================================
+   GOOGLE ANALYTICS 4
+   Measurement ID: G-Q9PM5CQXF7
+   Loaded here so analytics runs anywhere universal-search.js
+   is included.
+   ========================================================= */
+(function () {
+  if (window.__jehosafAnalyticsLoaded) return;
+  window.__jehosafAnalyticsLoaded = true;
+
+  var gaScript = document.createElement("script");
+  gaScript.async = true;
+  gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-Q9PM5CQXF7";
+  document.head.appendChild(gaScript);
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function () {
+    window.dataLayer.push(arguments);
+  };
+
+  window.gtag("js", new Date());
+  window.gtag("config", "G-Q9PM5CQXF7");
+})();
+
 
 /* JEHOSAF Universal Search */
 document.addEventListener("DOMContentLoaded", () => {
