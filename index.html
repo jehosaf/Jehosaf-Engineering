@@ -523,6 +523,65 @@ body{
 }
 </style>
 
+
+<style>
+/* =========================================================
+   HOMEPAGE IDENTITY
+   Name becomes the hero; remove duplicate top-left brand
+   ========================================================= */
+
+.universal-brand{
+  display:none !important;
+}
+
+.hero-name{
+  margin:0 0 16px !important;
+  line-height:.88 !important;
+  letter-spacing:-.045em !important;
+}
+
+.hero-name-main,
+.hero-name-sub{
+  display:block !important;
+  font-weight:900 !important;
+}
+
+.hero-name-main{
+  font-size:clamp(4.5rem, 7vw, 7.2rem) !important;
+  color:#17191b !important;
+}
+
+.hero-name-sub{
+  margin-top:8px !important;
+  font-size:clamp(3.7rem, 6.1vw, 6.3rem) !important;
+  color:#2f7d52 !important;
+}
+
+/* With the brand removed, let nav/search use the header cleanly */
+.universal-header{
+  justify-content:flex-end !important;
+}
+
+@media(max-width:700px){
+  .hero-name{
+    margin-bottom:14px !important;
+  }
+
+  .hero-name-main{
+    font-size:clamp(3.15rem, 15vw, 4.7rem) !important;
+  }
+
+  .hero-name-sub{
+    margin-top:5px !important;
+    font-size:clamp(2.75rem, 13vw, 4rem) !important;
+  }
+
+  .universal-header{
+    justify-content:center !important;
+  }
+}
+</style>
+
 </head>
 
 <body>
@@ -573,11 +632,10 @@ body{
 
         <div class="eyebrow">MECHANICAL ENGINEERING PORTFOLIO</div>
 
-        <h1>
-          Turning ideas<br>
-          into real-world<br>
-          <span>solutions.</span>
-        </h1>
+        <h1 class="hero-name">
+      <span class="hero-name-main">JEHOSAF</span>
+      <span class="hero-name-sub">PEREZ</span>
+    </h1>
         <p>
           Mechanical Engineering student at Texas State University with hands-on
           experience in CAD, fabrication, testing, prototyping, and problem solving.
