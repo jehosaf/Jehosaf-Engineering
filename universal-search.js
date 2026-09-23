@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
       keywords: ["launcher","tshirt","t-shirt","senior design","solidworks","testing","requirements","cad"]
     },
     {
-      title: "Two-Story Shop Office Expansion",
-      description: "Fabrication · welding · structural work · shop expansion",
+      title: "Office Expansion",
+      description: "SolidWorks · FEA · structural design · fabrication · project coordination",
       url: "/Jehosaf-Engineering/projects/office-expansion.html",
-      keywords: ["office","shop","welding","fabrication","structural","construction"]
+      keywords: ["office","expansion","solidworks","fea","fabrication","structural","construction","project coordination"]
     },
     {
       title: "3D Printing & Prototyping",
