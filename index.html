@@ -713,6 +713,146 @@ body{
 }
 </style>
 
+
+<style>
+/* =========================================================
+   HOMEPAGE HERO — SQUARE IMAGE + EVEN STATS
+   ========================================================= */
+
+/* Give JEHOSAF more room */
+.hero-card{
+  grid-template-columns:60% 40% !important;
+  gap:20px !important;
+  align-items:center !important;
+}
+
+/* True square welding image */
+.hero-art{
+  width:min(100%, 500px) !important;
+  aspect-ratio:1 / 1 !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  margin:12px 12px 12px 0 !important;
+  justify-self:end !important;
+  align-self:center !important;
+  overflow:hidden !important;
+  border-radius:22px !important;
+  background:#0f1012 !important;
+}
+
+.hero-art img{
+  width:100% !important;
+  height:100% !important;
+  display:block !important;
+  object-fit:cover !important;
+  object-position:52% 42% !important;
+  filter:brightness(1.15) contrast(1.06) !important;
+}
+
+/* Spread the four stats evenly across the entire left column */
+.stats-row,
+.hero-stats,
+.stats{
+  width:100% !important;
+  display:grid !important;
+  grid-template-columns:repeat(4, minmax(0, 1fr)) !important;
+  gap:0 !important;
+  align-items:start !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+.stats-row > *,
+.hero-stats > *,
+.stats > *{
+  min-width:0 !important;
+  width:100% !important;
+  padding:0 14px !important;
+  margin:0 !important;
+  box-sizing:border-box !important;
+}
+
+.stats-row > *:first-child,
+.hero-stats > *:first-child,
+.stats > *:first-child{
+  padding-left:0 !important;
+}
+
+.stats-row > *:last-child,
+.hero-stats > *:last-child,
+.stats > *:last-child{
+  padding-right:0 !important;
+}
+
+/* Tablet */
+@media(max-width:950px) and (min-width:701px){
+  .hero-card{
+    grid-template-columns:58% 42% !important;
+  }
+
+  .hero-art{
+    width:min(100%, 430px) !important;
+  }
+
+  .stats-row > *,
+  .hero-stats > *,
+  .stats > *{
+    padding:0 10px !important;
+  }
+}
+
+/* Phone */
+@media(max-width:700px){
+  .hero-card{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:16px !important;
+  }
+
+  .hero-art{
+    display:block !important;
+    width:min(100%, 320px) !important;
+    aspect-ratio:1 / 1 !important;
+    height:auto !important;
+    min-height:0 !important;
+    max-height:none !important;
+    margin:0 auto 12px !important;
+    align-self:center !important;
+    border-radius:18px !important;
+  }
+
+  .hero-art img{
+    object-position:52% 42% !important;
+  }
+
+  .stats-row,
+  .hero-stats,
+  .stats{
+    grid-template-columns:repeat(4, minmax(0, 1fr)) !important;
+    width:100% !important;
+  }
+
+  .stats-row > *,
+  .hero-stats > *,
+  .stats > *{
+    padding:0 6px !important;
+  }
+}
+
+@media(max-width:420px){
+  .hero-art{
+    width:min(100%, 290px) !important;
+  }
+
+  .stats-row > *,
+  .hero-stats > *,
+  .stats > *{
+    padding:0 4px !important;
+  }
+}
+</style>
+
 </head>
 
 <body>
