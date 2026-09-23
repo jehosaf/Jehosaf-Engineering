@@ -10,6 +10,64 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="/Jehosaf-Engineering/universal-header.css">
+
+<style>
+/* =========================================================
+   HOME PAGE CONTRAST TEST
+   Slightly deeper neutral background + stronger card depth
+   ========================================================= */
+
+body{
+  background:#e5e8ea !important;
+}
+
+/* Major white surfaces */
+.universal-header,
+.hero-card,
+.profile-card,
+.quick-card,
+.feature-card{
+  background:#ffffff !important;
+  border-color:#d2d7da !important;
+  box-shadow:
+    0 14px 34px rgba(24,32,38,.10),
+    0 2px 6px rgba(24,32,38,.04) !important;
+}
+
+/* Small cards inside Quick Access */
+.quick-grid a{
+  background:#ffffff !important;
+  border-color:#d3d8db !important;
+  box-shadow:0 4px 12px rgba(24,32,38,.055);
+}
+
+/* Search field stays white but gets a little more definition */
+.universal-search-box{
+  background:#ffffff !important;
+  border-color:#d1d6d9 !important;
+}
+
+/* Slightly stronger hover depth */
+.feature-card:hover{
+  box-shadow:
+    0 18px 40px rgba(24,32,38,.14),
+    0 3px 8px rgba(24,32,38,.05) !important;
+}
+
+/* Mobile: keep the contrast but reduce shadow size */
+@media(max-width:700px){
+  .universal-header,
+  .hero-card,
+  .profile-card,
+  .quick-card,
+  .feature-card{
+    box-shadow:
+      0 10px 24px rgba(24,32,38,.09),
+      0 2px 5px rgba(24,32,38,.035) !important;
+  }
+}
+</style>
+
 </head>
 
 <body>
