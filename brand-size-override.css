@@ -1,0 +1,67 @@
+
+/* JEHOSAF larger brand */
+.universal-brand{
+  min-width:max-content;
+}
+
+.universal-brand-main{
+  font-size:2.15rem !important;
+  line-height:.92 !important;
+  font-weight:800 !important;
+  letter-spacing:.18em !important;
+}
+
+.universal-brand-sub{
+  margin-top:8px !important;
+  font-size:.66rem !important;
+  line-height:1 !important;
+  letter-spacing:.20em !important;
+  font-weight:600 !important;
+}
+
+.universal-header{
+  min-height:86px !important;
+  padding-top:16px !important;
+  padding-bottom:16px !important;
+}
+
+@media(max-width:950px){
+  .universal-brand-main{
+    font-size:1.9rem !important;
+    letter-spacing:.16em !important;
+  }
+
+  .universal-brand-sub{
+    font-size:.61rem !important;
+  }
+}
+
+@media(max-width:700px){
+  .universal-header{
+    min-height:auto !important;
+    padding:15px 16px !important;
+  }
+
+  .universal-brand-main{
+    font-size:1.75rem !important;
+    line-height:.95 !important;
+    letter-spacing:.15em !important;
+  }
+
+  .universal-brand-sub{
+    margin-top:7px !important;
+    font-size:.57rem !important;
+    letter-spacing:.17em !important;
+  }
+}
+
+@media(max-width:420px){
+  .universal-brand-main{
+    font-size:1.58rem !important;
+    letter-spacing:.13em !important;
+  }
+
+  .universal-brand-sub{
+    font-size:.53rem !important;
+  }
+}
