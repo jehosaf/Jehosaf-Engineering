@@ -1045,6 +1045,220 @@ body{
 }
 </style>
 
+
+<style>
+/* =========================================================
+   MOBILE RECRUITER SNAPSHOT
+   Fast visual scan for QR-code visitors; desktop is unchanged.
+   ========================================================= */
+.mobile-snapshot,
+.mobile-featured-projects,
+.mobile-credentials{
+  display:none;
+}
+
+@media(max-width:700px){
+  /* Keep the first screen focused on identity + value */
+  .process-line,
+  .right-column,
+  .home-bio-card,
+  .bottom-grid{
+    display:none !important;
+  }
+
+  .hero-layout{
+    display:block !important;
+  }
+
+  .hero-card{
+    margin-bottom:14px !important;
+    padding-top:22px !important;
+    padding-bottom:18px !important;
+  }
+
+  .hero-copy > p{
+    font-size:.94rem !important;
+    line-height:1.48 !important;
+    margin-bottom:16px !important;
+  }
+
+  .hero-actions{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    gap:9px !important;
+    width:100% !important;
+  }
+
+  .hero-actions .btn{
+    width:100% !important;
+    justify-content:center !important;
+    padding:11px 8px !important;
+    font-size:.82rem !important;
+    box-sizing:border-box !important;
+  }
+
+  .stats{
+    margin-top:15px !important;
+  }
+
+  .stats > div{
+    padding:0 4px !important;
+  }
+
+  .stats strong{
+    font-size:1.1rem !important;
+  }
+
+  .stats span{
+    font-size:.62rem !important;
+    line-height:1.2 !important;
+  }
+
+  .mobile-snapshot,
+  .mobile-featured-projects,
+  .mobile-credentials{
+    display:block !important;
+    margin:14px 0 !important;
+  }
+
+  .mobile-section-head{
+    margin:0 2px 9px !important;
+  }
+
+  .mobile-section-head .kicker{
+    display:block;
+    margin-bottom:3px;
+    color:#2f7d52;
+    font-size:.65rem;
+    font-weight:800;
+    letter-spacing:.12em;
+  }
+
+  .mobile-section-head h2{
+    margin:0;
+    font-size:1.18rem;
+    line-height:1.15;
+    color:#17191b;
+  }
+
+  .mobile-skill-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+
+  .mobile-skill-card{
+    background:#fff;
+    border:1px solid #cfd5d8;
+    border-radius:13px;
+    padding:12px 14px;
+    box-shadow:0 4px 9px rgba(20,28,33,.10);
+  }
+
+  .mobile-skill-card strong{
+    display:block;
+    margin-bottom:3px;
+    font-size:.91rem;
+    color:#17191b;
+  }
+
+  .mobile-skill-card span{
+    display:block;
+    font-size:.78rem;
+    line-height:1.35;
+    color:#626a70;
+  }
+
+  .mobile-project-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+
+  .mobile-project-card{
+    display:grid;
+    grid-template-columns:108px 1fr;
+    min-height:100px;
+    overflow:hidden;
+    text-decoration:none;
+    background:#fff;
+    color:#17191b;
+    border:1px solid #cfd5d8;
+    border-radius:14px;
+    box-shadow:0 5px 11px rgba(20,28,33,.11);
+  }
+
+  .mobile-project-card img{
+    width:108px;
+    height:100%;
+    min-height:100px;
+    object-fit:cover;
+    display:block;
+  }
+
+  .mobile-project-copy{
+    padding:11px 12px;
+    align-self:center;
+  }
+
+  .mobile-project-copy h3{
+    margin:0 0 3px;
+    font-size:.93rem;
+    line-height:1.16;
+  }
+
+  .mobile-project-copy p{
+    margin:0 0 5px;
+    color:#626a70;
+    font-size:.74rem;
+    line-height:1.3;
+  }
+
+  .mobile-project-copy b{
+    color:#2f7d52;
+    font-size:.72rem;
+    font-weight:800;
+  }
+
+  .mobile-credential-row{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:7px;
+  }
+
+  .mobile-credential-row a,
+  .mobile-credential-row div{
+    min-width:0;
+    padding:10px 6px;
+    text-align:center;
+    text-decoration:none;
+    background:#fff;
+    color:#17191b;
+    border:1px solid #cfd5d8;
+    border-radius:12px;
+    box-shadow:0 4px 9px rgba(20,28,33,.09);
+  }
+
+  .mobile-credential-row strong{
+    display:block;
+    font-size:.79rem;
+    line-height:1.1;
+  }
+
+  .mobile-credential-row span{
+    display:block;
+    margin-top:3px;
+    color:#6b7378;
+    font-size:.62rem;
+    line-height:1.15;
+  }
+
+  .page-shell > footer{
+    margin-top:14px !important;
+  }
+}
+</style>
+
 </head>
 
 <body>
@@ -1195,6 +1409,83 @@ body{
 
     </aside>
 
+  </section>
+
+  <section class="mobile-snapshot" aria-label="Engineering strengths">
+    <div class="mobile-section-head">
+      <span class="kicker">AT A GLANCE</span>
+      <h2>What I bring to engineering teams</h2>
+    </div>
+    <div class="mobile-skill-grid">
+      <div class="mobile-skill-card">
+        <strong>Mechanical Design & CAD</strong>
+        <span>CSWP · SolidWorks · Product Development · FEA</span>
+      </div>
+      <div class="mobile-skill-card">
+        <strong>Manufacturing & Fabrication</strong>
+        <span>Welding · 3D Printing · DFM · Six Sigma</span>
+      </div>
+      <div class="mobile-skill-card">
+        <strong>Testing & Engineering Analysis</strong>
+        <span>Prototyping · Validation · Troubleshooting · Heat Transfer</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="mobile-featured-projects" aria-label="Featured projects">
+    <div class="mobile-section-head">
+      <span class="kicker">FEATURED WORK</span>
+      <h2>Projects in 30 seconds</h2>
+    </div>
+    <div class="mobile-project-grid">
+      <a class="mobile-project-card" href="/Jehosaf-Engineering/projects/tshirt-launcher.html">
+        <img src="/Jehosaf-Engineering/assets/Senior Design tshirt launcher.png" alt="TXST T-Shirt Launcher project">
+        <div class="mobile-project-copy">
+          <h3>TXST T-Shirt Launcher</h3>
+          <p>Senior Design · Pneumatics · Product Development · Testing</p>
+          <b>View project →</b>
+        </div>
+      </a>
+
+      <a class="mobile-project-card" href="/Jehosaf-Engineering/projects/shop-build.html">
+        <img src="/Jehosaf-Engineering/assets/Josias-project-7.jpeg" alt="40 by 60 steel shop build">
+        <div class="mobile-project-copy">
+          <h3>40 × 60 Steel Shop</h3>
+          <p>SolidWorks · FEA · Welding · Full-Scale Fabrication</p>
+          <b>View project →</b>
+        </div>
+      </a>
+
+      <a class="mobile-project-card" href="/Jehosaf-Engineering/projects/garage-build.html">
+        <img src="/Jehosaf-Engineering/assets/Josias-Project-4.jpeg" alt="Two-story garage build">
+        <div class="mobile-project-copy">
+          <h3>2-Story Garage Build</h3>
+          <p>Structural Design · FEA · Planning · Contractor Coordination</p>
+          <b>View project →</b>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="mobile-credentials" aria-label="Credentials and contact">
+    <div class="mobile-section-head">
+      <span class="kicker">QUICK LINKS</span>
+      <h2>Credentials & contact</h2>
+    </div>
+    <div class="mobile-credential-row">
+      <a href="/Jehosaf-Engineering/credentials.html">
+        <strong>CSWP</strong>
+        <span>SolidWorks</span>
+      </a>
+      <a href="/Jehosaf-Engineering/credentials.html">
+        <strong>Six Sigma</strong>
+        <span>Green Belt</span>
+      </a>
+      <a href="/Jehosaf-Engineering/contact.html">
+        <strong>Contact</strong>
+        <span>Email · LinkedIn</span>
+      </a>
+    </div>
   </section>
 
   <section class="home-bio-card">
